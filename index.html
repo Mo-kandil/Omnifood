@@ -4,11 +4,12 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="../vendors/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="../vendors/css/grid.css">
-    <link rel="stylesheet" type="text/css" href="../vendors/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../resources/css/queries.css">
+    <link rel="stylesheet" type="text/css" href="./vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="./vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="./vendors/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/queries.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:,100,300,400,300italic' rel='stylesheet' type='text/css'>
     <title>Omnifood</title>
 </head>
@@ -17,32 +18,44 @@
     
     <!-- 0HEADER -->
     <header>
-        <nav class="row">
-            <img src="./img/logo-white.png" alt="Omnifood logo" class="logo">
-            <ul class="main-nav">
-                <li><a href="#">Food delivery</a></li>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Our cities</a></li>
-                <li><a href="#">Sign up</a></li>
-            </ul>
+        <nav>
+            <div class="row">
+                <img src="./resources/img/logo-white.png" alt="Omnifood logo" class="logo">
+                <img src="./resources/img/logo.png" alt="Omnifood logo" class="logo-black">
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#features">Food delivery</a></li>
+                    <li><a href="#steps">How it works</a></li>
+                    <li><a href="#cities">Our cities</a></li>
+                    <li><a href="#plans">Sign up</a></li>
+                </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+            </div>
         </nav>
         <div class="hero-text-box">
-            <h1>Goodbye junk food.<br>Hello super healthy meals</h1>
-            <a class="btn btn-full" href="#">i'm hungry</a>
-            <a class="btn btn-ghost" href="#">Sow me more</a>
+            <h1>Goodbye junk food.<br>
+                <span 
+                class="typer" 
+                id="main" 
+                data-words="Hello super healthy food.,Best meals in world.,fastest delivery in the world.,free gifts for delicious food." 
+                data-delay="100" 
+                data-deleteDelay="100"
+                data-colors="#fff">
+                </span>
+                <span class="cursor" data-owner="main"></span>
+            </h1>
+            <a class="btn btn-full js--scrol-to-plans" href="#">i'm hungry</a>
+            <a class="btn btn-ghost js--scrol-to-features" href="#">Sow me more</a>
         </div>
     </header>
 
     <!-- 1 FEATURES -->
-    <section class="section-features">
+    <section class="section-features js--section-features" id="features">
         <div class="row">
-            <h2>Get food
-                <span class="typer" id="main" data-words="fast,healty,beautiful,easy" data-delay="100" data-deleteDelay="1000"></span>
-                &mdash; not fast food.
+            <h2>Get food fast &mdash; not fast food.
             </h2>
             <p class="long-copy">Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise!</p>
         </div>
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span-1-of-4 box">
                 <i class="ion-ios-infinite-outline icon-big"></i>
                 <h3>Up to 365 days/year</h3>
@@ -73,55 +86,55 @@
         <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo">
-                    <img alt="Korean bibimbap with egg and vegetables" src="./img/1.jpg">
+                    <img alt="Korean bibimbap with egg and vegetables" src="./resources/img/1.jpg">
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img alt="Simple italian pizza with cherry tomatoes" src="./img/2.jpg">
+                    <img alt="Simple italian pizza with cherry tomatoes" src="./resources/img/2.jpg">
                 </figure class="meal-photo">
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img alt="Chicken breast steak with vegetables " src="./img/3.jpg">
+                    <img alt="Chicken breast steak with vegetables " src="./resources/img/3.jpg">
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img alt="Autumn pumpkin soup" src="./img/4.jpg">
+                    <img alt="Autumn pumpkin soup" src="./resources/img/4.jpg">
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img alt="Paleo beef steak with vegetables" src="./img/5.jpg">
+                    <img alt="Paleo beef steak with vegetables" src="./resources/img/5.jpg">
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img alt="Healthy baguette with egg and vegetables" src="./img/6.jpg">
+                    <img alt="Healthy baguette with egg and vegetables" src="./resources/img/6.jpg">
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img alt="Burger with cheddar and bacon" src="./img/7.jpg">
+                    <img alt="Burger with cheddar and bacon" src="./resources/img/7.jpg">
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img alt="Granola with cherries and strawberries" src="./img/8.jpg">
+                    <img alt="Granola with cherries and strawberries" src="./resources/img/8.jpg">
                 </figure>
             </li>
         </ul>
     </section>
 
     <!-- 3 STEPS -->
-    <section class="section-steps">
+    <section class="section-steps" id="steps">
         <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-2 steps-box">
-                <img src="./img/app-iPhone.png" alt="Omnifood app on IPhone" class="app-screen">
+                <img src="./resources/img/app-iPhone.png" alt="Omnifood app on IPhone" class="app-screen js--wp-2">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="work-steps">
@@ -136,20 +149,20 @@
                     <div>3</div>
                     <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
                 </div>
-                <a href="#" class="btn-app"><img src="./img/app-store-icon.jpg" alt="app store button"></a>
-                <a href="#" class="btn-app"><img src="./img/download-app-android.png" alt="play store button"></a>
+                <a href="#" class="btn-app"><img src="./resources/img/app-store-icon.jpg" alt="app store button"></a>
+                <a href="#" class="btn-app"><img src="./resources/img/download-app-android.png" alt="play store button"></a>
             </div>
         </div>
     </section>
 
     <!-- 4 CITIES -->
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
-        <div class="row">
+        <div class="row js--wp-3">
             <div class="col span-1-of-4 box">
-                <img src="./img/lisbon-3.jpg" alt="Lisbon City">
+                <img src="./resources/img/lisbon-3.jpg" alt="Lisbon City">
                 <h3>Lisbon</h3>
                 <div class="city-feature">
                     <i class="ion-ios-person icon-small"></i>
@@ -165,7 +178,7 @@
                 </div>
             </div>
             <div class="col span-1-of-4 box">
-                <img src="./img/san-francisco.jpg" alt="San Francisco City">
+                <img src="./resources/img/san-francisco.jpg" alt="San Francisco City">
                 <h3>San Francisco</h3>
                 <div class="city-feature">
                     <i class="ion-ios-person icon-small"></i>
@@ -181,7 +194,7 @@
                 </div>
             </div>
             <div class="col span-1-of-4 box">
-                <img src="./img/berlin.jpg" alt="Berlin">
+                <img src="./resources/img/berlin.jpg" alt="Berlin">
                 <h3>Berlin</h3>
                 <div class="city-feature">
                     <i class="ion-ios-person icon-small"></i>
@@ -197,7 +210,7 @@
                 </div>
             </div>
             <div class="col span-1-of-4 box">
-                <img src="./img/london.jpg" alt="London City">
+                <img src="./resources/img/london.jpg" alt="London City">
                 <h3>London</h3>
                 <div class="city-feature">
                     <i class="ion-ios-person icon-small"></i>
@@ -224,34 +237,34 @@
             <div class="col span-1-of-3">
                 <blockquote>
                     Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
-                    <cite><img src="./img/customer-1.jpg">Alberto Duncan</cite>
+                    <cite><img src="./resources/img/customer-1.jpg">Alberto Duncan</cite>
                 </blockquote>
             </div>
 
             <div class="col span-1-of-3">
                 <blockquote>
                     Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
-                    <cite><img src="./img/customer-2.jpg">Joana Silva</cite>
+                    <cite><img src="./resources/img/customer-2.jpg">Joana Silva</cite>
                 </blockquote>
             </div>
 
             <div class="col span-1-of-3">
                 <blockquote>
                     I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
-                    <cite><img src="./img/customer-3.jpg">Milton Chapman</cite>
+                    <cite><img src="./resources/img/customer-3.jpg">Milton Chapman</cite>
                 </blockquote>
             </div>
         </div>
     </section>
 
     <!-- 6 PLANS -->
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="plans">
         <div class="row">
             <h2>Start eating healthy today</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <div class="plan-box">
+                <div class="plan-box js--wp-4">
                     <div>
                         <h3>Premium</h3>
                         <p class="plan-price">399$ <span>/ month</span></p>
@@ -405,8 +418,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./resources/js/main.js"></script>
+    <script src="./resources/js/script.js"></script>
+    <script src="./vendors/js/jquery.waypoints.min.js"></script>
 
 </body>
 </html>
