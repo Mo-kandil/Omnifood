@@ -65,7 +65,7 @@ $('a[href*="#"]')
     }
   }
 });
-
+/* Animation */
 $('.js--wp-1').waypoint(function(direction){
   $('.js--wp-1').addClass('animated fadeIn');
 },{
@@ -89,8 +89,12 @@ $('.js--wp-4').waypoint(function(direction){
 },{
   offset:'50%'
 });
-
-/* mobile nav */
+$('.js--wp-5').hover(function(direction){
+  $('.js--wp-5').addClass('animated pulse');
+},{
+  offset:'50%'
+});
+/* Mobile nav */
 $('.js--nav-icon').click(function(){
   var nav = $('.js--main-nav');
   var icon = $('.js--nav-icon i');

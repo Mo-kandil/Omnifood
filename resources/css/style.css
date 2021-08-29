@@ -125,7 +125,7 @@ h2:hover:after {
 a:visited {
   color: #e67e22;
   -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+  text-decoration-line: none;
   border-bottom: 1px solid #e67e22;
   padding-bottom: 2px;
   transition: color 0.2s, border-bottom 0.4s;
@@ -181,7 +181,7 @@ input[type='submit']:active {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./img/hero.jpg);
+    url(./img/hero-min.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -192,7 +192,7 @@ header {
   width: 1140px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -10%);
 }
 .hero-text-box .btn {
   margin-left: 15px;
@@ -206,17 +206,17 @@ header {
   margin-top: 20px;
   display: block;
 }
-.logo-black{
+.logo-black {
   height: 50px;
   width: auto;
   float: left;
   margin: 5px 0;
   display: none;
 }
-.sticky .logo{
+.sticky .logo {
   display: none;
 }
-.sticky .logo-black{
+.sticky .logo-black {
   display: block;
 }
 .main-nav {
@@ -244,17 +244,16 @@ header {
 }
 
 /* MOBILE NAV */
-.mobile-nav-icon{
+.mobile-nav-icon {
   float: right;
   display: none;
   margin-top: 30px;
   cursor: pointer;
 }
-.mobile-nav-icon i{
+.mobile-nav-icon i {
   color: #fff;
   font-size: 200%;
 }
-
 
 /* STICKY NAV */
 .sticky {
@@ -274,10 +273,10 @@ header {
   padding: 18px 0px;
   color: #555;
 }
-.sticky .logo{
+.sticky .logo {
   display: none;
 }
-.sticky .logo-black{
+.sticky .logo-black {
   display: block;
 }
 
@@ -329,7 +328,7 @@ header {
 .section-steps {
   background-color: #f4f4f4;
 }
-.steps-box{
+.steps-box {
   margin-top: 30px;
 }
 .steps-box:first-child {
@@ -399,7 +398,7 @@ header {
 
 .section-testimonials {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(./img/back-customers.jpg);
+    url(./img/back-customers-min.jpg);
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
@@ -438,15 +437,13 @@ cite img {
 
 .section-plans {
   background-color: #f4f4f4;
-  
 }
 .plan-box {
   background-color: #fff;
   border-radius: 5px;
   width: 90%;
   margin-left: 5%;
-  box-shadow: 0 2px 2px #e4e4e4;
-  
+  box-shadow: 0 20px 20px #e4e4e4;
 }
 .plan-box div {
   border-bottom: 1px solid #f8f8f8;
@@ -526,7 +523,6 @@ footer ul {
 footer li {
   display: inline-block;
   margin-right: 20px;
-  
 }
 .footer-nav {
   float: left;
@@ -541,42 +537,41 @@ footer li {
 .footer-nav li a:link,
 .footer-nav li a:visited,
 .social-links li a:link,
-.social-links li a:visited
-{
+.social-links li a:visited {
   color: #888;
   text-decoration: none;
   border: 0;
   transition: color 0.2s;
 }
 .footer-nav li a:hover,
-.footer-nav li a:active{
-    color: #ddd;
+.footer-nav li a:active {
+  color: #ddd;
 }
 .social-links li a:link,
-.social-links li a:visited{
-    font-size: 160%;
+.social-links li a:visited {
+  font-size: 160%;
 }
 .ion-social-facebook,
 .ion-social-twitter,
 .ion-social-googleplus,
-.ion-social-instagram{
-    transition: color 0.2s;
+.ion-social-instagram {
+  transition: color 0.2s;
 }
-.ion-social-facebook:hover{
-    color: #3b5998;
+.ion-social-facebook:hover {
+  color: #3b5998;
 }
-.ion-social-twitter:hover{
-    color: #00aced;
+.ion-social-twitter:hover {
+  color: #00aced;
 }
-.ion-social-googleplus:hover{
-    color: #dd4b39;
+.ion-social-googleplus:hover {
+  color: #dd4b39;
 }
-.ion-social-instagram:hover{
-    color: #517fa4;
+.ion-social-instagram:hover {
+  color: #517fa4;
 }
-footer p{
-    margin-top: 15px;
-    text-align: center;
+footer p {
+  margin-top: 15px;
+  text-align: center;
 }
 
 /* --------------------------------------- */
@@ -586,20 +581,18 @@ footer p{
 .js--wp-1,
 .js--wp-2,
 .js--wp-3,
-.js--wp-4
-{
+.js--wp-4 {
   opacity: 0;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
 }
-.js--wp-4{
+.js--wp-4 {
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
 }
 .js--wp-1.animated,
 .js--wp-2.animated,
 .js--wp-3.animated,
-.js--wp-4.animated
-{
+.js--wp-4.animated {
   opacity: 1;
 }
